@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    overflow: overlay;
+}
+
+/* =======================
+scroll bar
+======================= */
+::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(150, 149, 149, 0.493);
+    border-radius: 12px;
+    
+}
+
+
+/* ===================================================== */
+h2 {
+    padding: 10px 22px;
+    /* margin: 20px; */
+}
+
+h4 {
+    padding: 10px 22px;
+    margin: 20px;
+}
+
+p {
+    padding: 10px 22px;
+    margin: 20px;
+}
+/* ===================
+section
+=================== */
+
+
+section {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* width: 100%; */
+}
+
+
+#sec1::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#sec2::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#sec3::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('3.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#sec4::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('4.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#sec5::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('5.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#sec6::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('6.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#sec7::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('8.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s; 
+}
+
+.hidden.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+@media screen and (max-width: 375px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
